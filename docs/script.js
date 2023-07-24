@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     automatoData = null;
     testesData = null;
     outputDiv.innerHTML = "";
+    tipoAutomatoDiv.innerHTML = ""; // Limpar o tipo de autômato
   }
 
   function simularAutomato(automato, testes) {
@@ -99,7 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
         )
           ? 1
           : 0;
-        const end = performance.now(); // Fim da contagem de tempo de processamento
+        const end = performance.now();
+        // Fim da contagem de tempo de processamento
         result.time = ((end - start) / 1000).toFixed(3); // Tempo de processamento em segundos
 
         resultados.push(result);
