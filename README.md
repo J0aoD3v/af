@@ -6,7 +6,7 @@ Este repositório contém os códigos-fonte do simulador de autômatos finitos d
 
 # Pasta /docs/
 
-Os códigos-fonte HTML, CSS e JavaScript estão disponíveis na pasta /docs/ deste repositório. Você pode acessar o simulador em funcionamento no seguinte link: https://seu-usuario.github.io/nome-do-repositorio
+Os códigos-fonte HTML, CSS e JavaScript estão disponíveis na pasta /docs/ deste repositório. Você pode acessar o simulador em funcionamento no seguinte link: https://github.com/J0aoD3v/af
 
 # Instruções de Uso
 
