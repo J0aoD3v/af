@@ -8,11 +8,11 @@ Este repositório contém os códigos-fonte do simulador de autômatos finitos d
 
 Os códigos-fonte HTML, CSS e JavaScript estão disponíveis na pasta /docs/ deste repositório. 
 
-> Você pode acessar o simulador em funcionamento no seguinte link: https://j0aod3v.github.io/af/
-
-> Podera baixar aquivos de exemplo para testar o funcionamento da simulacao do AF: https://github.com/J0aoD3v/af/releases/tag/Example
-
 # Instruções de Uso
+
+Você pode acessar o simulador em funcionamento no seguinte link: https://j0aod3v.github.io/af/
+
+> Dica: Podera baixar aquivos de exemplo para testar o funcionamento da simulacao do AF: https://github.com/J0aoD3v/af/releases/tag/Example
 
 1. Carregue o arquivo de autômato finito no formato JSON clicando no botão "Arquivo de autômato".
 
