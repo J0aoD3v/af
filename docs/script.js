@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     outputDiv.innerHTML = "";
     const loadingIcon = document.createElement("img");
     loadingIcon.src =
-      "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif";
+      "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzJqcjVkd3dya2Fya3ltdzNtd3dwbzhvNmhhNWF1NDBuZjM1cWNkNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sSgvbe1m3n93G/giphy.gif";
     outputDiv.appendChild(loadingIcon);
 
     const resultado = await simularAutomato(automatoData, testesData);
