@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const limparBtn = document.getElementById("limpar");
   const outputDiv = document.getElementById("output");
   let isDeterministic = false; // Variável para armazenar a informação sobre o tipo do autômato
-  let tipoAutomatoDiv; // Referência para o elemento do tipo de autômato exibido
 
   let automatoData;
   let testesData;
@@ -23,18 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
           automatoData = JSON.parse(e.target.result);
           console.log("Arquivo de autômato carregado com sucesso.");
-          const newIsDeterministic = verificarDeterminismo(automatoData);
-          if (!tipoAutomatoDiv || newIsDeterministic !== isDeterministic) {
-            isDeterministic = newIsDeterministic;
-            if (tipoAutomatoDiv) {
-              outputDiv.removeChild(tipoAutomatoDiv);
-            }
-            tipoAutomatoDiv = document.createElement("div");
-            tipoAutomatoDiv.textContent = `Tipo de Autômato: ${
-              isDeterministic ? "Determinístico" : "Não Determinístico"
-            }`;
-            outputDiv.insertBefore(tipoAutomatoDiv, outputDiv.firstChild);
-          }
+          isDeterministic = verificarDeterminismo(automatoData);
+          exibirTipoDeAutomato(isDeterministic);
         } catch (error) {
           console.error("Erro ao carregar o arquivo de autômato.", error);
         }
@@ -176,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function exibirResultado(resultado) {
     const csvContent =
-      "palavra de entrada;resultado esperado;resultado obtido;tempo\n" +
+      "palavra de entrada;resultadoesperado;resultadoobtido;tempo\n" +
       resultado
         .map(
           (teste) =>
