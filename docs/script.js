@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const iniciarBtn = document.getElementById("iniciar");
   const limparBtn = document.getElementById("limpar");
   const outputDiv = document.getElementById("output");
+  const tipoAutomatoDiv = document.getElementById("tipoAutomato");
   let isDeterministic = false; // Variável para armazenar a informação sobre o tipo do autômato
 
   let automatoData;
@@ -158,9 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const tipoAutomato = isDeterministic
       ? "Determinístico"
       : "Não Determinístico";
-    const tipoAutomatoDiv = document.createElement("div");
     tipoAutomatoDiv.textContent = `Tipo de Autômato: ${tipoAutomato}`;
-    outputDiv.appendChild(tipoAutomatoDiv);
   }
 
   function exibirResultado(resultado) {
